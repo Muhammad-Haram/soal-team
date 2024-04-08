@@ -1,0 +1,361 @@
+/* font-family: "Inter", sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: neueHassDisplayBlack;
+    src: url('fonts/neueHassDisplay/NeueHaasDisplayBlack.ttf');
+}
+
+@font-face {
+    font-family: neueHassDisplayMed;
+    src: url('fonts/neueHassDisplay/NeueHaasDisplayMediu.ttf');
+}
+
+.team-section {
+    width: 100%;
+}
+
+/* team banner section */
+
+.team-banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px;
+}
+
+.team-banner .img-layer {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-banner .img-layer .team-sec-img {
+    max-width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team-banner .team-content {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.team-banner .team-content .team-heading {
+    font-size: 100px;
+    font-family: neueHassDisplayBlack;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.team-banner .team-content .team-para {
+    font-family: "Inter", sans-serif;
+    max-width: 650px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*team card section  */
+
+.team-allCards {
+    padding: 120px;
+}
+
+.team-card-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+.team-card-section .member-card {
+    width: 25%;
+    border: 1px solid #D5E0D5;
+    border-radius: 15px;
+    padding: 20px 50px 80px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-card-section .member-card .member-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.team-card-section .member-card .member-name {
+    color: #252525;
+    font-family: neueHassDisplayMed;
+    font-size: 16px;
+    text-align: center;
+}
+
+.team-card-section .member-card .member-position {
+    color: #505050;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.team-card-section .member-card .linkedin-btn {
+    background-color: #0082F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    gap: 10px;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+/* gallery section  */
+
+.team-gallery {
+    width: 100%;
+}
+
+.team-gallery .team-gallery-one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-gallery .team-gallery-one .gallery1 {
+    width: 50%;
+}
+
+.team-gallery .team-gallery-one .gallery2 {
+    width: 50%;
+}
+
+.team-gallery .team-gallery-two {
+    width: 100%;
+    height: 100%;
+}
+
+.team-gallery .team-gallery-two .gallery3 {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1040px) and (max-width:1200px) {
+    .team-banner .img-layer .team-sec-img {
+        max-width: 95%;
+    }
+
+    .team-banner .team-content .team-heading {
+        font-size: 50px;
+    }
+
+    .team-banner .team-content .team-para {
+        font-size: 16px;
+    }
+
+    /* card section  */
+
+    .team-allCards {
+        padding: 100px;
+    }
+
+    .team-card-section {
+        margin-bottom: 80px;
+    }
+
+    .team-card-section .member-card {
+        padding: 20px 40px 60px 40px;
+    }
+
+    .team-card-section .member-card .linkedin-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 767px) and (max-width:1040px) {
+    .team-banner .img-layer .team-sec-img {
+        max-width: 95%;
+    }
+
+    .team-banner .team-content .team-heading {
+        font-size: 50px;
+    }
+
+    .team-banner .team-content .team-para {
+        font-size: 16px;
+    }
+
+    /* card section  */
+
+    .team-allCards {
+        padding: 60px;
+    }
+
+    .team-card-section {
+        margin-bottom: 80px;
+        gap: 20px;
+    }
+
+    .team-card-section .member-card {
+        width: 25%;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .team-card-section .member-card .linkedin-btn {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    .team-banner .img-layer {
+        display: none;
+    }
+
+    .team-banner .team-content .team-heading {
+        font-size: 70px;
+    }
+
+    .team-banner .team-content .team-para {
+        font-size: 18px;
+        max-width: 550px;
+    }
+
+    /* card section  */
+
+    .team-allCards {
+        padding: 40px;
+    }
+
+    .team-card-section {
+        margin-bottom: 50px;
+        gap: 70px;
+        flex-wrap: wrap;
+    }
+
+    .team-card-section .member-card {
+        width: 40%;
+        padding: 10px 20px 30px 20px;
+    }
+
+    .team-card-section .member-card .linkedin-btn {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+
+    .team-card-section .member-card .member-position {
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 479px) {
+    .team-banner .img-layer {
+        display: none;
+    }
+
+    .team-banner .team-content .team-heading {
+        font-size: 50px;
+    }
+
+    .team-banner .team-content .team-para {
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+
+    .team-allCards {
+        padding: 20px;
+    }
+
+    .team-card-section {
+        margin-bottom: 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .team-card-section .member-card {
+        width: 45%;
+        padding: 10px 15px 20px 15px;
+    }
+
+    .team-card-section .member-card .linkedin-btn {
+        padding: 8px 8px;
+    }
+
+    .team-card-section .member-card .linkedin-btn .linkedin-span {
+        display: none;
+    }
+
+    .team-card-section .member-card .member-name {
+        color: #252525;
+        font-family: neueHassDisplayMed;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .team-card-section .member-card .member-position {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    /* team gallery  */
+
+    .team-gallery .team-gallery-one {
+        flex-direction: column;
+    }
+
+    .team-gallery .team-gallery-one .gallery1 {
+        width: 100%;
+    }
+
+    .team-gallery .team-gallery-one .gallery2 {
+        width: 100%;
+    }
+
+
+}
